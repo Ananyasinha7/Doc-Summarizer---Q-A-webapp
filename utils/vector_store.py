@@ -1,0 +1,17 @@
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.vectorstores import Chroma
+import uuid
+
+def get_vector_store(documents):
+    embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-base-en-v1.5")
+    
+   
+    collection_name = f"doc_collection_{str(uuid.uuid4()).replace('-', '_')}"
+    
+    return Chroma.from_documents(
+        documents=documents,
+        embedding=embeddings,
+        collection_name=collection_name,
+        persist_directory=None 
+    )
+
