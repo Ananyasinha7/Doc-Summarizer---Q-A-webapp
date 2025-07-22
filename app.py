@@ -1,7 +1,7 @@
 import os
 import tempfile
 import streamlit as st
-import whisper
+#import whisper
 from utils.document_loader import load_and_split, extract_preview
 from utils.vector_store import get_vector_store
 from utils.summarizer import generate_summary
