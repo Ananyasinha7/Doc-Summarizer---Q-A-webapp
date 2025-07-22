@@ -15,13 +15,13 @@ huggingface-hub
 #pyaudio 
 # av   
 pyttsx3
-"""ffmpeg-python
-sounddevice
-pydub
-speechrecognition
-openai-whisper
-websockets
-requests"""
+#ffmpeg-python
+#sounddevice
+#pydub
+#speechrecognition
+#openai-whisper
+#websockets
+#requests
 
 docx2txt
 pdfplumber
