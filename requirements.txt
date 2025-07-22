@@ -14,8 +14,8 @@ huggingface-hub
 #streamlit-webrtc
 #pyaudio 
 # av   
-"""pyttsx3
-ffmpeg-python
+pyttsx3
+"""ffmpeg-python
 sounddevice
 pydub
 speechrecognition
