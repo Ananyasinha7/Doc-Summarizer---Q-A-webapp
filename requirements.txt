@@ -11,17 +11,17 @@ python-dotenv
 huggingface-hub
 
 
-streamlit-webrtc
-pyaudio 
+#streamlit-webrtc
+#pyaudio 
 # av   
-pyttsx3
+"""pyttsx3
 ffmpeg-python
 sounddevice
 pydub
 speechrecognition
 openai-whisper
 websockets
-requests
+requests"""
 
 docx2txt
 pdfplumber
