@@ -1,5 +1,5 @@
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_community.vectorstores import Chroma
+from langchain_community.vectorstores import FAISS
 import uuid
 
 def get_vector_store(documents):
@@ -8,7 +8,7 @@ def get_vector_store(documents):
    
     collection_name = f"doc_collection_{str(uuid.uuid4()).replace('-', '_')}"
     
-    return Chroma.from_documents(
+    return FAISS.from_documents(
         documents=documents,
         embedding=embeddings,
         collection_name=collection_name,

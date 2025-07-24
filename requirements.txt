@@ -1,6 +1,6 @@
 streamlit
 langchain
-chromadb
+#chromadb
 sentence-transformers
 transformers
 faiss-cpu
