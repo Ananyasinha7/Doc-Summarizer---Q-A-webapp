@@ -114,33 +114,32 @@ if uploaded_file:
                 st.warning("Please enter a question first.")
         
         # Voice Input Section - Commented Out will be developed later
-        """
-        if mode == "Voice Input":
-            st.subheader("Speak Your Question")
+    
+    #    if mode == "Voice Input":
+     #       st.subheader("Speak Your Question")
             
-            transcript = transcribe_audio()
+      #      transcript = transcribe_audio()
 
-            if transcript:
-                st.success("Transcription complete!")
-                st.write("**You asked:**", transcript)
-                with st.spinner("Getting answer..."):
-                    answer = qa_chain.invoke({"input": transcript})
+       #     if transcript:
+        #        st.success("Transcription complete!")
+         #       st.write("**You asked:**", transcript)
+          #      with st.spinner("Getting answer..."):
+           #         answer = qa_chain.invoke({"input": transcript})
+#                   if isinstance(answer, dict):
+ #                       answer_text = answer.get('answer', str(answer))
+  #                  else:
+   #                     answer_text = str(answer)
 
-                    if isinstance(answer, dict):
-                        answer_text = answer.get('answer', str(answer))
-                    else:
-                        answer_text = str(answer)
-
-                if "Text" in output_format:
-                    st.write("**Answer:**", answer_text)
+    #            if "Text" in output_format:
+     #               st.write("**Answer:**", answer_text)
                 
-                if "Audio" in output_format:
-                    st.write("Playing audio response...")
-                    speak(answer_text)
+       #         if "Audio" in output_format:
+      #              st.write("Playing audio response...")
+        #            speak(answer_text)
                     
-                if output_format == "Audio Only":
-                    st.info("Audio response played. Enable 'Text + Audio' to see the written answer too.")
-        """
+         #       if output_format == "Audio Only":
+          #          st.info("Audio response played. Enable 'Text + Audio' to see the written answer too.")
+        
     else:
         st.info("Please process the document first (either generate a summary or click 'Process Document for Q&A')")
 
