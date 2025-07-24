@@ -11,7 +11,6 @@ def get_vector_store(documents):
     return FAISS.from_documents(
         documents=documents,
         embedding=embeddings,
-        collection_name=collection_name,
         persist_directory=None 
     )
 
