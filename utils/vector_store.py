@@ -10,7 +10,6 @@ def get_vector_store(documents):
     
     return FAISS.from_documents(
         documents=documents,
-        embedding=embeddings,
-        persist_directory=None 
+        embedding=embeddings
     )
 
